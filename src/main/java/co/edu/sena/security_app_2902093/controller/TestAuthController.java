@@ -14,8 +14,14 @@ public class TestAuthController {
     public String hello(){
         return  "Hello, Spring";
     }
+
     @GetMapping("/hello-secured")
     public String helloSecured(){
         return  "Hello, Spring Secured";
+    }
+
+    @GetMapping("/hello-secured2")
+    public String helloSecured2(){
+        return  "Hello, Spring Secured 2";
     }
 }
